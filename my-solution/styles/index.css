@@ -1,0 +1,119 @@
+
+/* outfit google font */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+/* outfit google font */
+
+:root {
+    --White: #ffffff;
+    --Slate300: #d6e2f0;
+    --Slate500: #68778d;
+    --Slate900: #1f3251;
+    --Outfit:"Oufit",sans-serif;
+    --Box-shadow: whitesmoke;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--Slate300);
+}
+
+.qr-main-container{
+    width: 400px;
+    height: 600px;
+    background-color: var(--White);
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--Outfit);
+    box-shadow: 0 0 2px 1px var(--Box-shadow);
+}
+.qr-main-container .image{
+    width: 90%;
+    height: 60%;
+    margin-top: 5%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.qr-main-container .image img{
+    width: 100%;
+    height: 100%;
+}
+
+.qr-main-container .info{
+    width: 80%;
+    height: auto;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.qr-main-container .info h2{
+    color: var(--Slate900);
+    font-weight: 700;
+}
+
+.qr-main-container .info p{
+    color: var(--Slate500);
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0 20px;
+    margin-top: 6%;
+    line-height: 20px;
+}
+
+.qr-main-container .info p a{
+    text-decoration: none;
+    color: var(--Slate900);
+}
+
+/* **************************************************************************************************** */
+                                             /* MEDIA QUERY */
+/* **************************************************************************************************** */
+
+/* Screen width from 0px-600px */
+@media screen and (max-width:600px) {
+    .qr-main-container{
+        width: 85%;
+        height: 80%;
+    }
+    .qr-main-container .info h2{
+        font-size: 1.2rem;
+    }
+    .qr-main-container .info p{
+        font-size: .8rem;
+        margin: 0 5px;
+        margin-top: 6%;
+    }
+}
+/* Screen width fron 620px-920px */
+@media (min-width:620px) and (max-width:920px) {
+    .qr-main-container{
+        width: 70%;
+        height: 85%;
+    }
+    .qr-main-container .info h2{
+        font-size: 2rem;
+    }
+    .qr-main-container .info p{
+        font-size: 1.5rem;
+        margin: 0 10px;
+        margin-top: 5%;
+        line-height: 35px;
+    }
+}
+
+/* **************************************************************************************************** */
+                                             /* MEDIA QUERY */
+/* **************************************************************************************************** */
